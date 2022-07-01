@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+body, html {
+    background-color: #212325 !important;
+}
+html{
+    height: 100%;
+}
+
+body{
+    margin-top: 10vh;
+}
+
+.main_frame{
+    background-color: #36383E !important;
+    margin-top: 2vh !important;
+    height: 96vh;
+}
+
+.users_list{
+    position: fixed !important;
+    background-color: #2E3036 !important;
+    top: 2vh;
+    height: 96vh;
+}
+.main_area{
+    min-height: 85vh !important;
+    margin-left: 25%;
+    margin-bottom: 7%;
+    margin-top: 2vh;
+}
+
+.chat__messages{
+    list-style: none;
+}
+.type_message{
+    position: fixed;
+    left: 29.5vw;
+    bottom: 2vh;
+    width: 59.56%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+.msg_from{
+    width: 100%;
+}
+.input_area{
+    width: 80%;
+    height: 60%;
+    font-size: 2rem;
+    padding: 1.6%;
+    margin-top: 2.5%;
+    margin-left: 0.2%;
+    padding-left: 3%;
+    outline: none;
+    background-color: #3B444B;
+    outline: none;
+    border: none;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+
+
+.send_btn{
+    height: 4.5rem;
+    width: 12%;
+    font-size: 1.8rem;
+    /* padding: 1.5%; */
+    margin-left: 5%;
+    background-color: #3B444B;
+    border: none;
+}
+
+.send_btn:hover{
+    background-color: #686f84;
+    /* font-size: 1.9rem; */
+}
+
+.location_area{
+    width: 25%;
+    background-color: #2E3036 !important;
+    text-align: center;
+}
+.location_btn{
+    margin: auto;
+    height: 60%;
+    width: 70%;
+    font-size: 1.8rem;
+    border: none;
+    background-color: #3B444B;
+    /* padding: 2%; */
+    margin: 8%;
+}
+
+.location_btn:hover{
+    /* font-size: 1.9rem; */
+    background-color: #686f84;
+}
+
+.form_area{
+    background-color: #2E3036 !important;
+    width: 75%;
+    margin-left: 0%;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #1B2430;
+    color: white;
+}
+
+.joinContainer{
+    /* background-color: aliceblue; */
+    width: 25%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.heading{
+    /* background-color: aqua; */
+    /* border-bottom: 2px solid white; */
+}
+
+.headingTxt{
+    margin: auto;
+    color: #18978F;
+    font-size: 3rem;
+    font-weight: 800;
+    width: fit-content;
+    margin-bottom: 3%;
+}
+
+.joinInput{
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 2%;
+    padding: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btnContainer{
+    /* background-color: #18978F; */
+}
+
+
+.button{
+    width: 107%;
+    height: 2.8rem;
+    color: white;
+    /* margin-left: 4%; */
+    margin-top: 4%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 2%;
+    background-color: #18978F;
+    border: none ;
+    border-radius: 5px;
+}
+
+.button:hover{
+    /* border: 2px solid #18978F; */
+    /* background-color: white; */
+    /* color: #18978F; */
+    cursor: pointer;
+    font-size: 1.27rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .joinContainer{
+        /* background-color: aliceblue; */
+        width: 75%;
+        margin-top: 35%;
+    }
+  }

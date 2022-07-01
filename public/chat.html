@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/chat.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous" />
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <h1>Welcome to chat app</h1> -->
+
+  <div class="container main_frame">
+    <div class="row">
+      <div class="col-sm-2 users_list">
+        <h3>People</h3>
+        <div id="users">
+          <div class="h4">Gaurav</div>
+          <div class="h4">Gaurav</div>
+          <div class="h4">Gaurav</div>
+          <div class="h4">Gaurav</div>
+        </div>
+      </div>
+
+      <div class="col-sm-9 main_area">
+        <ul id="messages" class="chat__messages"></ul>
+
+        <div class="row type_message">
+          <div class="form_area">
+            <form id="message-form" class="msg_form">
+              <input class="input_area" name="message" type="text" placeholder="Message" autofocus autocomplete="off" />
+              <button id="submit-btn" class="send_btn">Send</button>
+            </form>
+          </div>
+          <div class="location_area">
+            <button id="send-location" class="location_btn">Send location</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script id="message-template" type="text/template">
+      <li class="message">
+        <div class="message__title">
+          <h4>{{from}}</h4>
+          <span>{{createdAt}}</span>
+        </div>
+        <div class="message__body">
+          <p>{{text}}</p>
+        </div>
+      </li>
+    </script>
+
+  <script id="location-message-template" type="text/template">
+      <li class="message">
+        <div class="message__title">
+          <h4>{{from}}</h4>
+          <span>{{createdAt}}</span>
+        </div>
+        <div class="message__body">
+          <a href="{{url}}" target="_blank">My current location</a>
+        </div>
+      </li>
+    </script>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="/js/chat.js"></script>
+  <script type="text/javascript" src="/js/libs/moment.js"></script>
+  <script type="text/javascript" src="/js/libs/mustache.js"></script>
+</body>
+
+</html>
