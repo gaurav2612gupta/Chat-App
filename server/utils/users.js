@@ -5,7 +5,7 @@
 // }]
 
 class Users {
-    constructor(name,age){
+    constructor(){
         this.users = [];
     }
 
@@ -22,7 +22,7 @@ class Users {
         return namesArray
     }
     getUser(id){
-        return this.user.filter((user) => user.id===id)[0]
+        return this.users.filter((user) => user.id===id)[0]
     }
 
     removeUser(id) {
