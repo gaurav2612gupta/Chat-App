@@ -17,12 +17,21 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
     integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
     integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
     crossorigin="anonymous"></script>
 
+    <script>
+      function myFun() {
+        var x = document.getElementById('usrs');
+        if(x.style.display==="block") x.style.display = "none";
+        else x.style.display = "block";
+      }
+    </script>
 
   <title>Document</title>
 </head>
@@ -32,9 +41,12 @@
 
   <div class="container main_frame">
     <div class="row">
-      <div class="col-sm-2 users_list">
-        <h3>People</h3>
-        <div id="users"> </div>
+      <a href = "javascript:void(0)" class="usersIcon" onclick="myFun()" > <i class="fa fa-user "></i> </a>
+      <div class="col-sm-2 users_list" id="usrs">
+        <div class="leftMenu">
+            <h3>People</h3>
+            <div id="users" class="usrs"> </div>
+        </div>
       </div>
 
       <div class="col-sm-9 main_area">
@@ -60,8 +72,7 @@
   <script id="message-template" type="text/template">
       <li class="message">
         <div class="message__title">
-          <h4>{{from}}</h4>
-          <span>{{createdAt}}</span>
+          <h4>{{from}} <span class = "time">{{createdAt}}</span> </h4>
         </div>
         <div class="message__body">
           <p>{{text}}</p>
@@ -72,11 +83,11 @@
   <script id="location-message-template" type="text/template">
       <li class="message">
         <div class="message__title">
-          <h4>{{from}}</h4>
-          <span>{{createdAt}}</span>
+          <h4>{{from}}  <span class = "time" >{{createdAt}}</span> </h4>
+          
         </div>
         <div class="message__body">
-          <a href="{{url}}" target="_blank">My current location</a>
+          <a href="{{url}}" target="_blank" class = "loc" >My current location</a>
         </div>
       </li>
     </script>

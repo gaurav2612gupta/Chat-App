@@ -109,3 +109,72 @@ body{
     width: 75%;
     margin-left: 0%;
 }
+
+.usersIcon{
+    display: none;
+}
+#usrs{
+    display: block;
+}
+
+.time{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #d4d6dd;
+}
+.loc{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.loc:hover{
+    color: rgb(78, 193, 255);
+    text-decoration: none;
+}
+
+@media only screen and (max-width:500px) {
+    .usersIcon{
+        display: block ;
+        z-index: 10;
+        position: fixed;
+        margin-top: 4%;
+        margin-left: 3%;
+    }
+    .leftMenu{
+        margin-top: 4.5rem;
+    }
+    .users_list{
+        z-index: 9;
+    }
+    #usrs{
+        display: none ;
+    }
+    .main_area{
+        margin-top: 12%;
+        margin-left: 5%;
+    }
+    .type_message{
+        /* background-color: aqua; */
+        left: 4%;
+        right: 4%;
+        width: 100%;
+    }
+    .input_area{
+        height: 6rem;
+        width: 70%;
+    }
+    .msg_form{
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 1%;
+        /* background-color: aquamarine; */
+    }
+    .send_btn{
+        width: 20%;
+        height: 6rem;
+    }
+    .location_btn{
+        margin-top: 10%;
+        width: fit-content;
+        height: 6rem;
+    }
+}

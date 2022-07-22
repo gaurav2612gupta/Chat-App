@@ -10,7 +10,7 @@ const publicPath = path.join(__dirname,'/../public');
 
 const {Users} = require('./utils/users')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000 ;
 
 let app =express();
 let server = http.createServer(app);
@@ -73,6 +73,6 @@ io.on('connection',(socket)=>{
 
 
 
-server.listen(port,() =>{
+server.listen(port ,() =>{
     console.log(`Server is running on ${port}`)
 })
