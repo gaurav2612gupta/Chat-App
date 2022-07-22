@@ -131,6 +131,15 @@ body{
     text-decoration: none;
 }
 
+.msgTxt{
+    font-size: 1.8rem;
+    margin-top: -0.8rem;
+}
+
+.message{
+    margin-top: 1.5rem;
+}
+
 @media only screen and (max-width:500px) {
     .usersIcon{
         display: block ;
